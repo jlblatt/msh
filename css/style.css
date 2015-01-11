@@ -1,0 +1,86 @@
+/*-- style.css
+---- M shell ( msh )
+---- Copyright Jason Blatt 2008
+---- Distributed under terms of the GNU General Public License
+----      (http://www.gnu.org/licenses/gpl.txt)
+
+	This file is part of M'shell (msh).
+
+    M shell (msh) is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    M shell (msh) is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with M shell (msh).  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+html { background: #000000; }
+
+body {
+	font-family: Courier New, Monaco, Lucida Console;
+	font-size: 12px;
+	color: #00bb00;
+	overflow: hidden;
+	text-align: center;
+}
+
+body a { color: #dddddd; }
+body a:hover { color: #ffffff; text-decoration: none; }
+body a:active { color: #00ff00; }
+body a:visited { color: #bbbbbb; }
+
+p { margin: 0px; padding:0px; border:0px; }
+form { margin: 0px; padding: 0px; border 0px; height: 0px; }
+
+b { color: #aaaaaa; }
+u { text-decoration: none; }  /* Kill forced underlines to keep links unambiguous */
+
+.consoleToDraw { display: none; }
+
+.error { color: #dd3333; margin: 6px 16px 6px 4px; border-left: 1px solid #dd3333; padding-left: 12px; clear:both; }
+.warning { color: #ff8800; margin: 6px 16px 6px 4px; border-left: 1px solid #ff8800; padding-left: 12px; clear:both; }
+.ok { color: #5555ff; margin: 5px 16px 5px 4px; border-left: 1px solid #4444ff; padding-left: 12px; clear:both; }
+
+.executedCmd { color: #00ff00; }
+
+textarea#consoleInput { position: relative; left: -9000px; height: 1px; margin: 0px; padidng: 0px; }
+
+div#consoleDisplay { margin: 0px 10px 10px 10px; line-height: 16px; text-align: left; display: block; overflow: hidden; }
+div#consoleInputDisplay { margin: 0px 0px 0px 0px; padding: 10px; text-align: left; }
+div.consoleInputDisplayBlurred { border: 1px solid #444444; }
+div.consoleInputDisplayFocused { border: 1px dotted #444444; background: #080808; }
+span#marker { margin-left: 2px; border-left: 9px solid #009900; }
+div#buffer { display: none; }
+
+div#crash { position: absolute; top: -200px; left: -200px; background: #0000ff; color: #ffffff; display:none;}
+div#crashText { text-align: center;  font-size: 16px; font-family: monospace; font-weight: bold; line-height: 20px; }
+span.crashGrey { background: #aaaaaa; color: #0000ff; }
+td#crashTextLeft { font-size: 16px; font-family: monospace; font-weight: bold; line-height: 20px; color: #ffffff; }
+
+#upload_f { margin: 20px; border: 1px solid #00bb00; padding: 15px; float: left; height: 26px; }
+#upload_sub { margin-left: 25px; } 
+
+.col_1 { float:left; clear: left; }
+.col_list { float:left; clear: left; width:400px; }
+.col_100 { float:left; width:100px; padding:0px 0px 0px 25px; text-align: right; }
+.col_180 { float:left; width:180px; padding:0px 0px 0px 25px; }
+.col_220 { float:left; padding:0px 0px 0px 15px; width:220px; }
+.clearBoth { clear:both; }
+
+.dlLink { color: #ffffff; text-decoration: none; }
+.dlLink:hover { color: #ffffff; text-decoration: underline; }
+.cdLink { color: #00ff00; text-decoration: none; }
+.cdLink:hover { color: #ffffff; text-decoration: underline; }
+.mpLink { color: #5555ff;  text-decoration: none; }
+.mpLink:hover { color: #ffffff; text-decoration: underline; }
+.bgLink { color: #ffff55;  text-decoration: none; }
+.bgLink:hover { color: #ffffff; text-decoration: underline; }
+.lbLink { color: #5555ff;  text-decoration: none; }
+.lbLink:hover { color: #ffffff; text-decoration: underline; }
